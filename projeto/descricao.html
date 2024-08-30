@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tecnologias de Refrigeração</title>
+        <link rel="stylesheet" href="descricao_style.css">
+
+    <body>
+
+        <header>
+            <a href="home.html"><img src="img/Logo.png" alt="RAUSCHENBACH"></a>
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="Buscar funcionário">
+                <img src="img/lupa.png" alt="Pesquisar" id="searchButton">
+            </div>
+        </header>
+        
+
+        <nav>
+            <a href="#" id="loginButton">Ofertas</a>
+            <a href="#" id="nossosProdutosBtn">Nossos Produtos</a>
+        </nav>
+
+        <div id="produtosMenu" class="hidden">
+            <a href="camara.html"><button id="clienteBtn">Câmara Fria</button></a>
+            <a href="ares.html"><button id="mecanicoBtn">Ar condicionado</button></a>
+        </div>
+
+    </nav>
+    <main>
+        <div class="container">
+            <h4>Ofertas</h4>
+            <h2>Descrição | Câmara Fria</h2>
+            <div class="content">
+                <div class="card">
+                    <img class="card-img-top" src="img/camara2.jpeg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <p class="card-text">Altura: 2,70 m; Largura 3,43 m; Profundidade: 3,73 m</p>
+                        <h2>Câmara Fria Standard para Congelados CCC 3x3 - 220V</h2>
+                        <h3>R$ 25.062,90</h3>
+                        <p></p>
+                        <h3>Câmara Modular Standard para congelados</h3>
+                        <h4>Informações do Produto:</h4>
+                        <p>A Rauschenbach oferece o seu mais novo lançamento, a câmara modular Standard para congelados. Esse produto se encaixa perfeitamente para quem busca a conservação ideal de alimentos em baixas temperaturas. A câmara é constituída de equipamentos e instrumentos que possuem excelentes qualidades, os quais garantem maior durabilidade e melhor resistência. A câmara foi projetada para armazenar grande quantidade de produtos em seu interior, podendo alocar carnes, frangos, pescados, batatas fritas, gelos entre outros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <footer>
+            <p><a href="#">Contato</a> | <a href="#">Política de Privacidade</a> | <a href="#">Sobre nós</a> | <a href="#">Métodos de Pagamento</a></p>
+            <p>&copy; 2024 RAUSCHENBACH</p>
+        </footer>
+
+        <script>
+
+            document.getElementById("nossosProdutosBtn").addEventListener("click", function() {
+                var menu = document.getElementById("produtosMenu");
+                menu.style.position = "absolute";
+                menu.style.top = this.offsetTop + this.offsetHeight + "px";
+                menu.style.left = this.offsetLeft + "px";
+                menu.classList.toggle("hidden");
+            });
+            
+            </script>
+            
+
+    </body>
+    </html>

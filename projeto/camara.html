@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias de Refrigeração</title>
+    <link rel="stylesheet" href="camara_style.css">
+
+<body>
+
+    <header>
+        <a href="home.html"><img src="img/Logo.png" alt="RAUSCHENBACH"></a>
+        <div class="search-input-container">
+            <input type="text" id="searchInput" placeholder="Buscar funcionário">
+            <img src="img/lupa.png" alt="Pesquisar" id="searchButton">
+        </div>
+    </header>
+
+    <main>
+
+    <nav>
+        <a href="#" id="loginButton">Ofertas</a>
+        <a href="#" id="nossosProdutosBtn">Nossos Produtos</a>
+    </nav>
+
+    <div id="produtosMenu" class="hidden">
+        <a href="camara.html"><button id="clienteBtn">Câmara Fria</button></a>
+        <a href="ares.html"><button id="mecanicoBtn">Ar condicionado</button></a>
+    </div>
+
+</nav>
+    <div class="container">
+
+    <h2>Nossos Produtos | Câmara Fria </h2>
+
+    <div class="container">
+      
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="img/camara2.jpeg" alt="Câmara Fria Standard para Congelados CCC 3x3 - 220V">
+            <div class="info">
+              <h3>Câmara Fria Standard para Congelados CCC 3x3 - 220V</h3>
+              <p class="price">R$ 25.062,90</p>
+              <p>5% à vista no PIX ou boleto</p>
+            </div>
+            <div class="details">
+              <a href="descricao.html">Ver descrição do produto</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/img 3.jpeg" alt="Câmara Fria Gallant 2x3 Resfriado c/ Piso Cond Elgin 220/1F">
+            <div class="info">
+              <h3>Câmara Fria Gallant 2x3 Resfriado c/ Piso Cond Elgin 220/1F</h3>
+              <p class="price">R$ 24.458,40</p>
+              <p>Em até 10x de R$ 3.397,00 (sem juros)</p>
+            </div>
+            <div class="details">
+              <a href="#">Ver descrição do produto</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/img 4.jpeg" alt="Câmara Fria Gullant SR-ECP 3x4 Painéis Resfriado Standard com Piso Pain com Cond Elgin">
+            <div class="info">
+              <h3>Câmara Fria Gullant SR-ECP 3x4 Painéis Resfriado Standard</h3>
+              <p class="price">R$ 37.635,00</p>
+              <p>Em até 10x de R$ 3.763,50 (sem juros no cartão)</p>
+            </div>
+            <div class="details">
+              <a href="#">Ver descrição do produto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </main>
+
+    <footer>
+        <p><a href="#">Contato</a> | <a href="#">Política de Privacidade</a> | <a href="#">Sobre nós</a> | <a href="#">Métodos de Pagamento</a></p>
+        <p>&copy; 2024 RAUSCHENBACH</p>
+    </footer>
+
+
+<script>
+
+        document.getElementById("nossosProdutosBtn").addEventListener("click", function() {
+            var menu = document.getElementById("produtosMenu");
+            menu.style.position = "absolute";
+            menu.style.top = this.offsetTop + this.offsetHeight + "px";
+            menu.style.left = this.offsetLeft + "px";
+            menu.classList.toggle("hidden");
+        });
+        
+        </script>
+
+</body>
+</html>
